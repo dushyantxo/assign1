@@ -152,8 +152,23 @@ Let $X$ be the random variable defined on the above probability space as
     $X(4) = 3$.
 If $P(X \leq 2) = \frac{3}{4}$, then find $P(\{1, 4\})$ (rounded off to two decimal places).\\\hfill (GATE ST 2023)\\
 \solution
+\begin{table}[H]
+\begin{tabular}{|c|c|c}
+\hline
+Probablity space &Value \\ \hline
+$\Omega$ & $\{1, 2, 3, 4\}$\\\hline
+$\mathcal{G}$ &$\{\emptyset, \Omega, \{1\}, \{4\}, \{2, 3\}, \{1, 4\}, \{1, 2, 3\}, \{2, 3, 4\}\}$\\\hline
+$P(\{1\})$ &$\frac{1}{4}$\\\hline
+$ X(1)$ &$1$\\\hline
+$X(2)$ & $2$\\\hline
+$X(3)$ & $2$\\\hline
+$X(4)$ & $3$\\\hline
+$P(X \leq 2)$ & $\frac{3}{4}$\\\hline
+\end{tabular}
+\label{tab:gate/st/60}
+\end{table}
 \begin{align}
-P(\{1, 4\}) = P(X=1 \text{ or } X=4)
+Pr(\{1, 4\}) = Pr(X=1 \text{ or } X=4)
 \end{align}
 X is defined as \\
 \begin{align}
@@ -161,27 +176,27 @@ X(1) = 1, \quad X(2) = X(3) = 2, \quad X(4) = 3
 \end{align}
 We can express P({1,4})as:
 \begin{align}
-P(\{1,4\}) &= P(X=1) + P(X=4)\\
-P(X \leq 2) &= P(X=1) + P(X=2) + P(X=3)
+Pr(\{1,4\}) &= Pr(X=1) + Pr(X=4)\\
+Pr(X \leq 2) &= Pr(X=1) + Pr(X=2) + Pr(X=3)
 \end{align}
 Lets denote
 \begin{align}
-P(X=2) &= P(X=3) = p
+Pr(X=2) &= Pr(X=3) = p
 \end{align}
 Now we can solve for p
 \begin{align}
-\frac{3}{4} &= P(X=1) + 2p\\
+\frac{3}{4} &= Pr(X=1) + 2p\\
 \frac{3}{4} &= \frac{1}{4} +2p\\
 p &= \frac{1}{4}
 \end{align}
 Now that we have p, we can find P(X=4)
 \begin{align}
-P(X=4) &= p = \frac{1}{4}
+Pr(X=4) &= p = \frac{1}{4}
 \end{align}
 Finally
 \begin{align}
-P(\{1,4\}) &= P(X=1) + P(X=4) = \frac{1}{4} + \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\\
-P(\{1,4\}) &= 0.5
+Pr(\{1,4\}) &= Pr(X=1) + Pr(X=4) = \frac{1}{4} + \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\\
+Pr(\{1,4\}) &= 0.5
 \end{align}
 
 \end{document}
