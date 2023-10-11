@@ -152,51 +152,58 @@ Let $X$ be the random variable defined on the above probability space as
     $X(4) = 3$.
 If $P(X \leq 2) = \frac{3}{4}$, then find $P(\{1, 4\})$ (rounded off to two decimal places).\\\hfill (GATE ST 2023)\\
 \solution
-\begin{table}[H]
+\begin{table}[ht]
+\centering
+\caption{Probablity space}
 \begin{tabular}{|c|c|c}
 \hline
 Probablity space &Value \\ \hline
 $\Omega$ & $\{1, 2, 3, 4\}$\\\hline
 $\mathcal{G}$ &$\{\emptyset, \Omega, \{1\}, \{4\}, \{2, 3\}, \{1, 4\}, \{1, 2, 3\}, \{2, 3, 4\}\}$\\\hline
 $P(\{1\})$ &$\frac{1}{4}$\\\hline
-$ X(1)$ &$1$\\\hline
-$X(2)$ & $2$\\\hline
-$X(3)$ & $2$\\\hline
-$X(4)$ & $3$\\\hline
 $P(X \leq 2)$ & $\frac{3}{4}$\\\hline
+\end{tabular}
+\label{tab:gate/st/60-1}
+\end{table}
+%
+\begin{table}[ht]
+\centering
+\caption{Random variable}
+    \label{tab:GATE ST 60-2}
+\begin{tabular}{|c|c|c}
+\hline
+$X\brak{\Omega}$ & $\Omega$\\\hline
+$\{1\}$ & 1\\\hline
+$\{2,3\}$ &2\\\hline
+$\{4\}$ & 3\\\hline
 \end{tabular}
 \label{tab:gate/st/60}
 \end{table}
+%
 \begin{align}
-Pr(\{1, 4\}) = Pr(X=1 \text{ or } X=4)
+Pr(\{1, 4\}) = Pr(X=1 \text{ or } X=3)
 \end{align}
-X is defined as \\
+We know\\
 \begin{align}
-X(1) = 1, \quad X(2) = X(3) = 2, \quad X(4) = 3
+Pr(X=1) +  Pr(X=2) + Pr(X=3)   &= 1
 \end{align}
-We can express P({1,4})as:
+We can express Pr($X \leq 2$)as:
 \begin{align}
-Pr(\{1,4\}) &= Pr(X=1) + Pr(X=4)\\
-Pr(X \leq 2) &= Pr(X=1) + Pr(X=2) + Pr(X=3)
+Pr(X \leq 2) &= Pr(X=1) + Pr(X=2)\\
+\frac{3}{4} &= Pr(X=2) + \frac{1}{4}\\
+Pr(X=2) &= \frac{1}{2}
 \end{align}
-Lets denote
+Using
 \begin{align}
-Pr(X=2) &= Pr(X=3) = p
-\end{align}
-Now we can solve for p
-\begin{align}
-\frac{3}{4} &= Pr(X=1) + 2p\\
-\frac{3}{4} &= \frac{1}{4} +2p\\
-p &= \frac{1}{4}
-\end{align}
-Now that we have p, we can find P(X=4)
-\begin{align}
-Pr(X=4) &= p = \frac{1}{4}
+Pr(X=1) +  Pr(X=2) + Pr(X=3)   &= 1\\
+\frac{1}{4} + \frac{1}{2} + Pr(X=3) &=1\\
+Pr(X=3) &= \frac{1}{4}
 \end{align}
 Finally
 \begin{align}
-Pr(\{1,4\}) &= Pr(X=1) + Pr(X=4) = \frac{1}{4} + \frac{1}{4} = \frac{2}{4} = \frac{1}{2}\\
-Pr(\{1,4\}) &= 0.5
+Pr(\{1, 4\}) &= Pr(X=1) +Pr(X=3)\\
+Pr(\{1, 4\}) &= \frac{1}{4} + \frac{1}{4}\\
+Pr(\{1, 4\}) &= 0.5
 \end{align}
 
 \end{document}
