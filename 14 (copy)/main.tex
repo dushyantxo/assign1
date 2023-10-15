@@ -182,36 +182,44 @@ $\{4\}$ & 3\\\hline
 \\
 Pmf is defined as\\
 \begin{align}
-P_{X}\brak{k} &= \begin{cases}
+P_X\brak{k} &= \begin{cases}
 P(\{1\}) & ,k=1\\
 P(\{2,3\}) &, k=2\\
 P(\{4\}) &, k=3\\
 \end{cases}
 \end{align}
+Values of P(\{2,3\}), P(\{4\}) are unknown, so let p, q be their respective values
 \begin{align}
-Pr(\{1, 4\}) = Pr(X=1 \text{ or } X=3)
+P_X\brak{k} &= \begin{cases}
+\frac{1}{4} & ,k=1\\
+p &, k=2\\
+q &, k=3\\
+\end{cases}
+\end{align}
+\begin{align}
+\Pr{(\{1, 4\})} = \Pr{(X=1 \text{ or } X=3)}
 \end{align}
 We know\\
 \begin{align}
-Pr(X=1) +  Pr(X=2) + Pr(X=3)   &= 1
+\Pr{(X=1)} +  \Pr{(X=2)} + \Pr{(X=3)}   &= 1
 \end{align}
 We can express Pr($X \leq 2$)as:
 \begin{align}
-Pr(X \leq 2) &= Pr(X=1) + Pr(X=2)\\
-\frac{3}{4} &= Pr(X=2) + \frac{1}{4}\\
-Pr(X=2) &= \frac{1}{2}
+\Pr{(X \leq 2)} &= \Pr{(X=1)} + p\\
+\frac{3}{4} &= p + \frac{1}{4}\\
+p &= \frac{1}{2}
 \end{align}
 Using
 \begin{align}
-Pr(X=1) +  Pr(X=2) + Pr(X=3)   &= 1\\
-\frac{1}{4} + \frac{1}{2} + Pr(X=3) &=1\\
-Pr(X=3) &= \frac{1}{4}
+\Pr{(X=1)} +  p +q  &= 1\\
+\frac{1}{4} + \frac{1}{2} + q &=1\\
+q &= \frac{1}{4}
 \end{align}
 Finally
 \begin{align}
-Pr(\{1, 4\}) &= Pr(X=1) +Pr(X=3)\\
-Pr(\{1, 4\}) &= \frac{1}{4} + \frac{1}{4}\\
-Pr(\{1, 4\}) &= 0.5
+\Pr{(\{1, 4\})} &= \Pr{(X=1)} +q\\
+\Pr{(\{1, 4\})} &= \frac{1}{4} + \frac{1}{4}\\
+\Pr{(\{1, 4\})} &= 0.5
 \end{align}
 
 \end{document}
