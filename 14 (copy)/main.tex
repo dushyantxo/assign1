@@ -190,7 +190,7 @@ P(\{4\}) &, k=3\\
 \end{align}
 Values of P(\{2,3\}), P(\{4\}) are unknown, so let p, q be their respective values
 \begin{align}
-p_x\brak{k} &= \begin{cases}
+p_X\brak{k} &= \begin{cases}
 \frac{1}{4} & ,k=1\\
 p &, k=2\\
 q &, k=3\\
@@ -225,6 +225,15 @@ Finally
 \includegraphics[width=\columnwidth]{figs/main2.png}
 \caption{Analytical vs simulated}
 \label{fig:GATE ST 60}
-\end{figure}
+\end{figure}\\
+Steps for simulating random variable.\\
+\begin{enumerate}
+\item Define the simulation size for datast (samples).
+\item Assign calculated probablity for each probablity space p1, p2, p3, p4.
+\item Define Random to generate a random number between 0 and 1.
+\item Define the loop such that it generated number 1, 2, 3 for defined probablity space.
+\item Store the simulated data in a .dat file.
+\item Using matplotlib lib of python generate a V-line graph from the data in .dat file by counting the number of 1, 2, 3 .
+\end{enumerate}
 \end{document}
  
